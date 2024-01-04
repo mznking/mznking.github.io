@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maazin Ahamed (mznking)</title>
+  <meta name="description" content="Personal portfolio of Maazin Ahamed, showcasing web development skills and GitHub projects.">
+  <meta name="keywords" content="Maazin Ahamed, portfolio, web development, mzn king, github, software developer, programmer, fullstack developer, hacker, software engineer">
+  <meta property="og:title" content="Maazin Ahamed (mznking)">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon.png">
+  <meta property="og:description" content="Personal portfolio of Maazin Ahamed, showcasing web development skills and GitHub projects.">
+  <meta name="author" content="Maazin Ahamed">
+  <meta name="theme-color" content="#1a1a1a"> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap">
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: #ffffff;
+      font-family: 'Outfit', sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #333;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    main {
+      margin: 20px;
+    }
+
+    img {
+      border-radius: 50%;
+      width: 180px;
+      height: 180px;
+      margin-bottom: 15px;
+    }
+
+    h2, h3, p {
+      margin-bottom: 10px;
+    }
+
+    .count-container {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    .count {
+      font-size: 36px;
+      margin: 5px;
+      color: #00b894;
+      font-weight: bold;
+      animation: countUp 1s ease-out, countdown 5s linear infinite;
+    }
+
+    @keyframes countdown {
+    0% {
+      color: #00b894;
+    }
+    50% {
+      color: #e74c3c;
+    }
+    100% {
+      color: #00b894;
+    }
+  }
+
+    .title {
+      font-size: 18px;
+      margin: 5px;
+    }
+
+    #images {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 20px;
+    }
+
+    #images img {
+      width: 80px;
+      height: 80px;
+      border-radius: 10px;
+      margin: 5px;
+    }
+
+    #joined, #last-updated {
+      font-size: 16px;
+      margin-top: 15px;
+    }
+
+    #location-img, #works-img {
+      width: 30px;
+      height: 30px;
+      margin-right: 5px;
+    }
+
+    .quote {
+      font-style: italic;
+      font-size: 20px;
+      margin-top: 20px;
+    }
+
+    .section {
+      margin-top: 40px;
+      border-top: 2px solid #333;
+      padding-top: 20px;
+    }
+
+    .section h3 {
+      font-size: 24px;
+    }
+
+    .section p {
+      font-size: 18px;
+    }
+    #repositories {
+      margin-top: 40px;
+      border-top: 2px solid #333;
+      padding-top: 20px;
+    }
+    
+    .repo-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .repo-card {
+      background-color: #333;
+      color: #fff;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 10px;
+      width: 300px;
+      text-align: left;
+    }
+
+    .repo-card p {
+      margin: 15px 0;
+    }
+
+    .repo-card h4 {
+      font-size: 18px;
+    }
+
+    .repo-card p.description {
+      font-style: italic;
+      font-size: 14px;
+    }
+
+    .repo-card .stats {
+      color: #aaa;
+      font-size: 12px;
+    }
+
+    @keyframes countUp {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 20px;
+      }
+      img {
+        width: 150px;
+        height: 150px;
+      }
+      .count {
+        font-size: 24px;
+      }
+      .title {
+        font-size: 14px;
+      }
+      .quote {
+        font-size: 16px;
+      }
+      .section h3 {
+        font-size: 20px;
+      }
+      .section p {
+        font-size: 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Maazin Ahamed (mznking)</h1>
+  </header>
+  <main>
+    <img id="avatar" src="https://avatars.githubusercontent.com/u/136259904?v=4" alt="Maazin's Avatar">
+    <h2 id="name">Maazin Ahamed</h2>
+    <p id="location">Location: Matara, Sri Lanka</p>
+    <p id="company">Works: MZN Studios</p>
+    <p id="bio">Bio: Own your journey, radiate positivity, and conquer challenges with flair!</p>
+
+    <div class="count-container">
+      <div>
+        <p class="count" id="followers-count">0</p>
+        <p class="title">Followers</p>
+      </div>
+      <div>
+        <p class="count" id="following-count">0</p>
+        <p class="title">Following</p>
+      </div>
+      <div>
+        <p class="count" id="repos-count">0</p>
+        <p class="title">Repositories</p>
+      </div>
+    </div>
+
+    <p id="joined">Joined GitHub on: June 11, 2023</p>
+    <p id="last-updated"></p>
+
+    <div class="quote">
+      <p>"Own your journey, radiate positivity, and conquer challenges with flair!"</p>
+    </div>
+
+    <div class="section">
+      <h3>Skills</h3>
+      <p>Web Development, JavaScript, React, HTML, CSS, Node.js</p>
+    </div>
+
+    <div class="section">
+      <h3>Contact us</h3>
+      <p>Contact me via email address.</p>
+      <p>E-mail: maazinkingmc@gmail.com</p>
+    </div>
+ 
+     <div id="repositories" class="repo-container"></div>
+
+  </main>
+
+  <script>
+    async function fetchData() {
+      try {
+        const response = await fetch('https://api.github.com/users/mznking');
+        const data = await response.json();
+
+        document.getElementById('avatar').src = data.avatar_url;
+        document.getElementById('name').textContent = data.name;
+        document.getElementById('location').textContent = `${data.location}`;
+        document.getElementById('company').textContent = `${data.company}`;
+        document.getElementById('bio').textContent = `${data.bio}`;
+        document.getElementById('followers-count').textContent = data.followers;
+        document.getElementById('following-count').textContent = data.following;
+        document.getElementById('repos-count').textContent = data.public_repos;
+        document.getElementById('joined').textContent = `Joined GitHub on: ${new Date(data.created_at).toDateString()}`;
+
+        const lastUpdated = new Date(data.updated_at);
+        document.getElementById('last-updated').textContent = `Last updated on: ${lastUpdated.toDateString()} at ${lastUpdated.toLocaleTimeString()}`;
+      } catch (error) {
+        console.error('Error fetching data:', error);
+      }
+    }
+
+    async function fetchRepoData() {
+      try {
+        const repoResponse = await fetch('https://api.github.com/users/mznking/repos');
+        const repoData = await repoResponse.json();
+
+        const repositoriesContainer = document.getElementById('repositories');
+        repositoriesContainer.innerHTML = ''; // Clear existing content
+
+        repoData.forEach(repo => {
+          const repoCard = document.createElement('div');
+          repoCard.classList.add('repo-card');
+          repoCard.innerHTML = `
+            <h4>${repo.name}</h4>
+            <p class="description">${repo.description || 'No description available'}</p>
+            <p class="stats">${repo.stargazers_count} stars   ${repo.forks} forks</p>
+          `;
+            repoCard.addEventListener('click', () => {
+            window.open(repo.html_url, '_blank');
+            });
+          repositoriesContainer.appendChild(repoCard);
+        });
+      } catch (error) {
+        console.error('Error fetching repository data:', error);
+      }
+    }
+
+    fetchData(); // Fetch data on page load
+    fetchRepoData(); // Fetch repo data on page load
+
+    // Fetch data and repo data every 5 minutes
+    setInterval(() => {
+      fetchData();
+      fetchRepoData();
+    }, 5 * 60 * 1000);
+  </script>
+</body>
+</html>
